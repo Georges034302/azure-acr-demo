@@ -26,9 +26,8 @@ _This project demonstrates a complete CI/CD pipeline using **Azure Container Reg
 │   &ensp;&ensp;&ensp;├── update_readme.sh         
 │   &ensp;&ensp;&ensp;├── git_push.sh        
 │   &ensp;&ensp;&ensp;├── deploy.sh            
-│   &ensp;&ensp;&ensp;├── entrypoint.sh\ 
-│   &ensp;&ensp;&ensp;└── cleanup.sh (One-time script - cleanup azure resources)
-│     
+│   &ensp;&ensp;&ensp;├── entrypoint.sh<br>
+│   &ensp;&ensp;&ensp;└── cleanup.sh (One-time script - cleanup azure resources)  
 ├── ci.yml                    
 └── deploy.yml
 
