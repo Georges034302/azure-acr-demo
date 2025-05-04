@@ -9,7 +9,7 @@ _This project demonstrates a complete CI/CD pipeline using **Azure Container Reg
 - 🐳 Docker Build: A custom Docker image is built on every change and pushed to ACR.
 - 🚀 Deployment: The container is automatically deployed to ACI.
 - 🔄 Trigger: The CI/CD workflow is triggered by changes to specific data.txt.
-- ✅ Sucess: Dynamically update `index.html` with the word count and `README` with the curent 🌐FQDN
+- ✅ Sucess: Dynamically update `index.html` with the word count
 - 🌐 Live Output: The updated word count is viewable at a public URL (FQDN) after deployment.
 
 ---
@@ -23,8 +23,6 @@ _This project demonstrates a complete CI/CD pipeline using **Azure Container Reg
 ├── scripts/\
 │   &ensp;&ensp;&ensp;├── setup.sh   (One-time script - initialization)                  
 │   &ensp;&ensp;&ensp;├── update_html.sh\
-│   &ensp;&ensp;&ensp;├── update_readme.sh         
-│   &ensp;&ensp;&ensp;├── git_push.sh        
 │   &ensp;&ensp;&ensp;├── deploy.sh            
 │   &ensp;&ensp;&ensp;├── entrypoint.sh<br>
 │   &ensp;&ensp;&ensp;└── cleanup.sh (One-time script - cleanup azure resources)  
@@ -32,11 +30,8 @@ _This project demonstrates a complete CI/CD pipeline using **Azure Container Reg
 └── deploy.yml
 
 index.html                 
-specific data.txt           
+data.txt           
 Dockerfile\
 .gitignore                
 
 ---
-
-### 🌐 Live App Access (FQDN)
-http://label.regio.azurecontainer.io
