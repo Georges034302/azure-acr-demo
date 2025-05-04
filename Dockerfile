@@ -5,7 +5,12 @@ WORKDIR /app
 # Install required dependencies, including Git
 RUN apt-get update && apt-get install -y \
     git \
+    ca-certificates \
+    openssh-client \
     && apt-get clean
+
+# Trust GitHub SSH host key
+RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
 
 # Copy app and input files
 COPY "index.html" "data.txt" "README.md" /app/
