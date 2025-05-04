@@ -39,4 +39,4 @@ Dockerfile\
 ---
 
 ### 🌐 Live App Access (FQDN)
-http://dns-label.australiaeast.azurecontainer.io
+http://label.regio.azurecontainer.io

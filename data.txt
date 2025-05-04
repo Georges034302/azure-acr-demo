@@ -1,1 +1,1 @@
-This is a test file for Azure ACR + GitHub Actions + ACI 
+This is a test file for Azure ACR + GitHub Actions + ACI container app python
