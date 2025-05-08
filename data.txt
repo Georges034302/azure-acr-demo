@@ -1,2 +1,0 @@
-Azure CI/CD
-test 2
