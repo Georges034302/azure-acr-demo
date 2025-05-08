@@ -1,0 +1,10 @@
+# Local secrets file
+.env
+# Local secrets file (do not track)
+.env.local
+# Local secrets file (do not track)
+.env.development.local
+# Local secrets file (do not track)
+.env.test.local
+# Local secrets file (do not track)
+.env.production.local
