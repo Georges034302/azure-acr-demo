@@ -37,11 +37,12 @@ Dockerfile\
 
 ---
 ### 🧰 Stack Overview
-- Cloud: Azure Kubernetes Service (AKS)
-- Container Orchestration: Kubernetes
-- Deployment Tool: Helm 3
-- App Example: NGINX served via LoadBalancer
-- CLI Tools: az, kubectl, helm
+- Cloud: Azure Container Registery (ACR)
+- Cloud: Azure Ccontainer Instances (ACI)
+- Container : Docker
+- CI/CD: GitHub Actions
+- App Example: Python app
+- CLI Tools: az, gh
 ---
 
 ### 🚀 How to Deploy
@@ -70,4 +71,4 @@ To delete Azure resources:
 
 ### ✅ Example Output:
 
-🌐 Live App Access (FQDN): http://<dns-label>.<region>.azurecontainer.io
+🌐 Live App Access (FQDN): http://\<dns-label\>.\<region\>.azurecontainer.io
