@@ -36,3 +36,38 @@ Dockerfile\
 .gitignore                
 
 ---
+### 🧰 Stack Overview
+- Cloud: Azure Kubernetes Service (AKS)
+- Container Orchestration: Kubernetes
+- Deployment Tool: Helm 3
+- App Example: NGINX served via LoadBalancer
+- CLI Tools: az, kubectl, helm
+---
+
+### 🚀 How to Deploy
+
+1. **Install dependencies**
+   ```
+   chmod +x setup.sh
+   ./.github/scripts/setup.sh
+   ```
+
+2. **Run the deployment**
+   ```
+   chmod +x deploy.sh
+   ./.github/scripts/deploy.sh
+   ```
+---
+
+### 🧹 Cleanup
+
+To delete Azure resources:
+   ```
+   chmod +x cleanup.sh
+   ./.github/scripts/cleanup.sh
+   ```
+---
+
+### ✅ Example Output:
+
+🌐 Live App Access (FQDN): http://<dns-label>.<region>.azurecontainer.io
