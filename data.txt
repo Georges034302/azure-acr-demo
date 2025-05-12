@@ -1,2 +1,0 @@
-This is a teset file
-tesing Azure + Github actions CI/CD
