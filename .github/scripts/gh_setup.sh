@@ -10,10 +10,15 @@ export REPO=${REPO:-$OWNER/$REPO}  # Default to current repo if not set
 
 # --- Unset GITHUB_TOKEN to avoid conflicts ---
 unset GITHUB_TOKEN
+gh auth logout --hostname "$HOSTNAME" || true
 
-# --- Authenticate GitHub CLI with the token ---
-echo "🔐 Logging into GitHub CLI with the provided token..."
-echo "$GH_TOKEN" | gh auth login --hostname "$HOSTNAME" --with-token
+if ! gh auth status --hostname "$HOSTNAME" &>/dev/null; then
+  echo "🔐 Logging into GitHub CLI with GH_TOKEN from environment..."
+  echo "$GH_TOKEN" | gh auth login --hostname "$HOSTNAME" --with-token
+  echo "✅ gh auth login completed"
+else
+  echo "✅ Already authenticated with GitHub CLI."
+fi
 
 # --- Verify login ---
 echo ""

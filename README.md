@@ -57,6 +57,10 @@ Dockerfile\
    chmod +x deploy.sh
    ./.github/scripts/deploy.sh
    ```
+
+* ✅ Example Output:
+
+   🌐 Live App Access (FQDN): http://\<dns-label\>.\<region\>.azurecontainer.io
 ---
 
 ### 🧹 Cleanup
@@ -68,6 +72,6 @@ To delete Azure resources:
    ```
 ---
 
-### ✅ Example Output:
+### 👨‍💻 Author: Georges Bou Ghantous
 
-🌐 Live App Access (FQDN): http://<dns-label>.<region>.azurecontainer.io
+This repository demonstrates automated deployment of a Python app to ACI+ACR using GitHub Actions. 💙
