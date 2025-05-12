@@ -37,11 +37,12 @@ Dockerfile\
 
 ---
 ### 🧰 Stack Overview
-- Cloud: Azure Kubernetes Service (AKS)
-- Container Orchestration: Kubernetes
-- Deployment Tool: Helm 3
-- App Example: NGINX served via LoadBalancer
-- CLI Tools: az, kubectl, helm
+- Cloud: Azure Container Registry (ACR)
+- Cloud: Azure Container Instances (ACI)
+- CI/CD: GitHub Actions
+- Deployment Tool: Bash scripts & Azure CLI
+- App Example: Python word count app served via Python HTTP server
+- CLI Tools: az, gh, docker
 ---
 
 ### 🚀 How to Deploy
